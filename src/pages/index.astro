@@ -1,0 +1,58 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/layout.astro';
+import profilePic from '../images/MichaelMeierhoff_4MB.jpg';
+---
+
+<Layout>
+  <div class="mx-auto mb-4 h-80 w-80 overflow-hidden rounded-full border-4 border-gray-500">
+    <Image src={profilePic} alt="Profilbild" class="h-full w-full object-cover" width={600} height={600} format="jpg" />
+  </div>
+
+  <h1 class="mb-6 text-2xl font-bold">Hallo, ich bin Michael Meierhoff</h1>
+  <p class="mx-auto mb-8 max-w-xl text-center leading-relaxed text-gray-300">
+    Softwareentwickler & Enterprise Architekt. Ich helfe Unternehmen, moderne Softwarelösungen zu entwickeln und
+    IT-Strukturen zu skalieren. Meine Leidenschaft ist es, komplexe Systeme zu vereinfachen.
+  </p>
+
+  <div class="mb-6 flex justify-center space-x-4">
+    <a
+      href="https://www.facebook.com/michael.meierhoff"
+      target="_blank"
+      class="text-2xl text-gray-400 hover:text-white"
+    >
+      <i class="fab fa-facebook"></i>
+    </a>
+
+    <a href="https://www.instagram.com/triamime/" target="_blank" class="text-2xl text-gray-400 hover:text-white">
+      <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://x.com/mimeonline" target="_blank" class="text-2xl text-gray-400 hover:text-white">
+      <i class="fab fa-twitter"></i>
+    </a>
+
+    <a href="https://github.com/mimeonline" target="_blank" class="text-2xl text-gray-400 hover:text-white">
+      <i class="fab fa-github"></i>
+    </a>
+
+    <a
+      href="https://www.linkedin.com/in/michael-meierhoff-b5426458/"
+      target="_blank"
+      class="text-2xl text-gray-400 hover:text-white"
+    >
+      <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a
+      href="https://www.xing.com/profile/Michael_Meierhoff/web_profiles?expandNeffi=true"
+      target="_blank"
+      class="text-2xl text-gray-400 hover:text-white"
+    >
+      <i class="fab fa-xing"></i>
+    </a>
+  </div>
+</Layout>
+<style scoped>
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+</style>
