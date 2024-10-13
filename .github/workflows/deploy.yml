@@ -28,4 +28,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist  # Das Verzeichnis, das von Astro generiert wird
+          publish_dir: ./dist  # Hier sicherstellen, dass das dist-Verzeichnis verwendet wird
+          force_orphan: true 
