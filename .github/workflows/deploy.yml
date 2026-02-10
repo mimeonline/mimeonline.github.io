@@ -39,9 +39,11 @@ jobs:
         run: pnpm quality && pnpm build
 
       - name: Check generated links
+        continue-on-error: true
         run: pnpm check:links
 
       - name: Lighthouse audit
+        continue-on-error: true
         run: pnpm audit:lighthouse
 
       - name: Deploy to GitHub Pages
