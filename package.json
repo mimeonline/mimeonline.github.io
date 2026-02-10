@@ -13,7 +13,7 @@
     "clean": "rimraf dist",
     "build": "astro build",
     "check": "astro check",
-    "check:links": "pnpm dlx linkinator dist/index.html --silent --timeout 10000",
+    "check:links": "pnpm dlx linkinator dist/index.html --silent --timeout 10000 --retry --status-code \"429:warn\"",
     "audit:lighthouse": "pnpm dlx @lhci/cli autorun --config=.lighthouserc.json",
     "quality": "pnpm run lint && pnpm run prettier && pnpm run check",
     "prepush": "pnpm run clean && pnpm run quality && pnpm run build",
