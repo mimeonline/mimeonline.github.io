@@ -6,26 +6,41 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
-          node-version: '22.9.0'  # Empfohlen für Astro
+          node-version: '25'
+          cache: 'pnpm'
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
 
       - name: Install dependencies
-        run: npm install
+        run: pnpm install --frozen-lockfile
 
       - name: Build the project
-        run: npm run build
+        run: pnpm quality && pnpm build
+
+      - name: Check generated links
+        run: pnpm check:links
+
+      - name: Lighthouse audit
+        run: pnpm audit:lighthouse
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist  # Hier sicherstellen, dass das dist-Verzeichnis verwendet wird
+          publish_dir: ./dist # Hier sicherstellen, dass das dist-Verzeichnis verwendet wird

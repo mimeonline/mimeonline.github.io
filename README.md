@@ -1,47 +1,55 @@
-# Astro Starter Kit: Minimal
+# michaelmeierhoff.de
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Persoenliche Website von Michael Meierhoff.  
+Die Seite dient als digitale Visitenkarte mit Profil, Kurzvorstellung und direkten Links zu Social- und Business-Praesenzen.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+## Zweck
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- Klare, kompakte Selbstdarstellung
+- Schnell erreichbare Kontakt- und Netzwerklinks
+- Solide technische Basis fuer spaetere Erweiterungen
 
-## 🚀 Project Structure
+## Tech Stack
 
-Inside of your Astro project, you'll see the following folders and files:
+- Astro 5
+- Tailwind CSS 4
+- daisyUI 5
+- pnpm
+- Node.js 25 (`.nvmrc`, `engines`)
+
+## Projektstruktur
 
 ```text
 /
-├── public/
+├── public/                # Statische Dateien (favicon, robots.txt, ...)
 ├── src/
-│   └── pages/
-│       └── index.astro
+│   ├── images/            # Profil- und Medienbilder
+│   ├── components/        # Wiederverwendbare UI-Bausteine
+│   ├── content/           # Zentrale Site-Konfiguration (Texte, Links, Meta)
+│   ├── layouts/           # Seiten-Layouts
+│   ├── pages/             # Routen (u. a. Startseite)
+│   └── styles/            # Globale Styles (Tailwind v4)
+├── .github/workflows/     # CI/CD Deployment nach GitHub Pages
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Entwicklung
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Alle Befehle im Projekt-Root ausfuehren:
 
-Any static assets, like images, can be placed in the `public/` directory.
+| Command                 | Action                                           |
+| :---------------------- | :----------------------------------------------- |
+| `pnpm install`          | Installiert alle Abhaengigkeiten                 |
+| `pnpm dev`              | Startet lokalen Dev-Server auf `localhost:4321`  |
+| `pnpm build`            | Erstellt Production-Build in `dist/`             |
+| `pnpm preview`          | Startet Preview des Build-Artefakts              |
+| `pnpm lint`             | Fuehrt Linting aus                               |
+| `pnpm check`            | Fuehrt Astro/Type-Checks aus                     |
+| `pnpm check:links`      | Prueft generierte HTML-Dateien auf defekte Links |
+| `pnpm audit:lighthouse` | Fuehrt Lighthouse (Performance + A11y + SEO) aus |
+| `pnpm quality`          | Fuehrt `lint + prettier + check` aus             |
 
-## 🧞 Commands
+## Deployment
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Das Deployment erfolgt ueber GitHub Actions bei Push auf `main` nach GitHub Pages.  
+Workflow-Datei: `.github/workflows/deploy.yml`

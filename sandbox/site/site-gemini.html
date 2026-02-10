@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Meierhoff - Architekt, Maker, Traveler</title>
+    <meta name="description" content="Persönliche Website von Michael Meierhoff. Enterprise Architect, Solopreneur und Vanlife-Enthusiast.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .accent-gradient {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="text-slate-200 antialiased selection:bg-amber-500/30">
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center pt-20 pb-12 px-6">
+        <!-- Ambient Background Decoration -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-6xl h-full pointer-events-none overflow-hidden">
+            <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-amber-500/10 blur-[120px] rounded-full"></div>
+            <div class="absolute bottom-[10%] right-[-5%] w-[30%] h-[30%] bg-blue-500/10 blur-[100px] rounded-full"></div>
+        </div>
+
+        <div class="relative max-w-4xl w-full text-center">
+            <div class="mb-8 inline-block relative">
+                <div class="absolute -inset-1 accent-gradient rounded-full blur opacity-25"></div>
+                <!-- Aktualisiertes Bild: image_f43edb.png -->
+                <img 
+                    src="Michael-Meierhoff_marine-blue-color.png" 
+                    alt="Michael Meierhoff Portrait" 
+                    class="relative w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-slate-800 shadow-2xl mx-auto bg-white"
+                    onerror="this.src='https://via.placeholder.com/200?text=Michael+Meierhoff'"
+                >
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-white mb-4">
+                Michael <span class="text-gradient">Meierhoff</span>
+            </h1>
+            <p class="text-xl md:text-2xl font-light text-slate-400 mb-8 uppercase tracking-[0.2em]">
+                Ingenieur &bull; Architekt &bull; Reisender
+            </p>
+            
+            <div class="max-w-2xl mx-auto">
+                <p class="text-lg text-slate-300 leading-relaxed mb-10">
+                    Ich verbinde komplexe Software-Architektur mit der Freiheit des mobilen Lebens. 
+                    Nach über 35 Jahren in der IT arbeite ich heute als <span class="text-white font-medium">Solopreneur</span> 
+                    an der Schnittstelle von Technologie, System Thinking und KI.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#weiche" class="px-8 py-3 rounded-full accent-gradient text-white font-semibold hover:scale-105 transition-transform shadow-lg shadow-amber-900/20">
+                        Portfolio entdecken
+                    </a>
+                    <a href="#about" class="px-8 py-3 rounded-full border border-slate-700 bg-slate-800/50 text-white font-semibold hover:bg-slate-700 transition-colors">
+                        Über mich
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Die Weiche (Main Navigation Cards) -->
+    <section id="weiche" class="py-24 px-6 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center">Fokusbereiche</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Business -->
+                <a href="https://meierhoff-systems.de" class="glass-card p-8 rounded-3xl group hover:border-amber-500/50 transition-all">
+                    <div class="w-12 h-12 bg-amber-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="briefcase" class="text-amber-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Business & Consulting</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Seniore IT-Modernisierung, Cloud-Migration und Enterprise Governance. Hier finden Sie mein geschäftliches Angebot.
+                    </p>
+                    <span class="text-amber-500 font-medium flex items-center gap-2 group-hover:gap-3 transition-all">
+                        meierhoff-systems.de <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </span>
+                </a>
+
+                <!-- Tech & AI -->
+                <a href="https://nexonoma.de" class="glass-card p-8 rounded-3xl group hover:border-blue-500/50 transition-all">
+                    <div class="w-12 h-12 bg-blue-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="brain-circuit" class="text-blue-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Tech, Knowledge & AI</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Nexonoma / MapLab: Mein Labor für Knowledge Graphs, KI-Agenten und visuelle Architektur-Experimente.
+                    </p>
+                    <span class="text-blue-400 font-medium flex items-center gap-2 group-hover:gap-3 transition-all">
+                        nexonoma.de <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </span>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com/in/michaelmeierhoff" target="_blank" class="glass-card p-8 rounded-3xl group hover:border-slate-400 transition-all">
+                    <div class="w-12 h-12 bg-slate-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="linkedin" class="text-slate-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Netzwerk & Vita</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Mein vollständiger Lebenslauf, berufliche Meilensteine und direkter Austausch auf LinkedIn.
+                    </p>
+                    <span class="text-slate-300 font-medium flex items-center gap-2 group-hover:gap-3 transition-all">
+                        Profil ansehen <i data-lucide="external-link" class="w-4 h-4"></i>
+                    </span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Über Mich Section -->
+    <section id="about" class="py-24 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-white mb-8">Hinter dem Code</h2>
+                    <p class="text-slate-300 mb-6 leading-relaxed">
+                        Ich glaube daran, dass gute Architektur – egal ob in Software oder im Leben – auf <strong>Resilienz und Einfachheit</strong> beruht. 
+                    </p>
+                    <p class="text-slate-300 mb-8 leading-relaxed">
+                        Wenn ich nicht gerade komplexe IT-Landschaften entwirre, baue ich an meiner eigenen Infrastruktur und erkunde die Welt jenseits der Autobahnen.
+                    </p>
+                    
+                    <ul class="space-y-6">
+                        <li class="flex gap-4">
+                            <div class="mt-1"><i data-lucide="truck" class="text-amber-500 w-6 h-6"></i></div>
+                            <div>
+                                <h4 class="text-white font-bold">Vanlife & Autarkie</h4>
+                                <p class="text-slate-400 text-sm">Mein Camper ist ein voll vernetztes, energieautarkes Smart Home (Home Assistant & ESP32).</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <div class="mt-1"><i data-lucide="music" class="text-amber-500 w-6 h-6"></i></div>
+                            <div>
+                                <h4 class="text-white font-bold">Musik & Rhythmus</h4>
+                                <p class="text-slate-400 text-sm">Gitarre lernen als Ausgleich zur digitalen Logik – Struktur trifft auf Sound.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <div class="mt-1"><i data-lucide="camera" class="text-amber-500 w-6 h-6"></i></div>
+                            <div>
+                                <h4 class="text-white font-bold">Fotografie</h4>
+                                <p class="text-slate-400 text-sm">Den Moment festhalten, während die Landschaft am mobilen Office vorbeizieht.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="relative">
+                    <div class="absolute inset-0 accent-gradient blur-[60px] opacity-10 rounded-full"></div>
+                    <div class="glass-card p-8 rounded-3xl relative">
+                        <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                            <i data-lucide="layers" class="text-amber-500 w-5 h-5"></i> Tech Stack
+                        </h3>
+                        <div class="space-y-6">
+                            <div>
+                                <p class="text-xs uppercase tracking-widest text-slate-500 mb-3">Languages & Frameworks</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-slate-800 rounded-lg text-xs font-medium border border-slate-700">Java</span>
+                                    <span class="px-3 py-1 bg-slate-800 rounded-lg text-xs font-medium border border-slate-700">Python</span>
+                                    <span class="px-3 py-1 bg-slate-800 rounded-lg text-xs font-medium border border-slate-700">TypeScript</span>
+                                    <span class="px-3 py-1 bg-slate-800 rounded-lg text-xs font-medium border border-slate-700">Astro</span>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-xs uppercase tracking-widest text-slate-500 mb-3">Architecture & Data</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-slate-800 rounded-lg text-xs font-medium border border-slate-700">DDD</span>
+                                    <span class="px-3 py-1 bg-slate-800 rounded-lg text-xs font-medium border border-slate-700">Neo4j</span>
+                                    <span class="px-3 py-1 bg-slate-800 rounded-lg text-xs font-medium border border-slate-700">AWS</span>
+                                    <span class="px-3 py-1 bg-slate-800 rounded-lg text-xs font-medium border border-slate-700">ARC42</span>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-xs uppercase tracking-widest text-slate-500 mb-3">Mobile Office & IoT</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-amber-500/10 text-amber-500 rounded-lg text-xs font-medium border border-amber-500/20">Starlink</span>
+                                    <span class="px-3 py-1 bg-amber-500/10 text-amber-500 rounded-lg text-xs font-medium border border-amber-500/20">Victron</span>
+                                    <span class="px-3 py-1 bg-amber-500/10 text-amber-500 rounded-lg text-xs font-medium border border-amber-500/20">ESP32</span>
+                                    <span class="px-3 py-1 bg-amber-500/10 text-amber-500 rounded-lg text-xs font-medium border border-amber-500/20">Home Assistant</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-slate-500 text-sm">
+                &copy; 2026 Michael Meierhoff. Built with <span class="text-slate-300">Astro & Tailwind</span>.
+            </div>
+            <div class="flex gap-8 text-sm font-medium">
+                <a href="#" class="hover:text-amber-500 transition-colors">Impressum</a>
+                <a href="#" class="hover:text-amber-500 transition-colors">Datenschutz</a>
+                <a href="mailto:michael@meierhoff-systems.de" class="hover:text-amber-500 transition-colors">Kontakt</a>
+            </div>
+            <div class="flex gap-4">
+                <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-amber-500 transition-colors">
+                    <i data-lucide="github" class="w-5 h-5"></i>
+                </a>
+                <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-amber-500 transition-colors">
+                    <i data-lucide="linkedin" class="w-5 h-5"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Simple scroll animation for cards
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.glass-card').forEach(card => {
+            card.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700');
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>

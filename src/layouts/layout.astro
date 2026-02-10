@@ -1,28 +1,54 @@
 ---
+import '../styles/global.css';
+import { site } from '../content/site';
 
+const canonicalUrl = `${site.url}/`;
+const ogImageUrl = `${site.url}${site.ogImage}`;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: site.author,
+  url: site.url,
+  sameAs: site.socialLinks.map((link) => link.href),
+  jobTitle: 'Softwareentwickler & Enterprise Architekt',
+  description: site.description,
+};
 ---
 
 <html lang="de">
   <head>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="canonical" href={canonicalUrl} />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content={site.themeColor} />
     <meta name="robots" content="index, follow" />
-    <meta
-      name="description"
-      content="Michael Meierhoff ist ein erfahrener Softwareentwickler und Enterprise Architekt, der Unternehmen hilft, moderne Softwarelösungen zu entwickeln und IT-Strukturen zu skalieren."
-    />
-    <meta
-      name="keywords"
-      content="Michael Meierhoff, Softwareentwickler, Enterprise Architekt, IT-Strukturen, moderne Softwarelösungen, skalieren, Architektur, IT-Architektur, Systementwicklung"
-    />
-    <meta name="author" content="Michael Meierhoff" />
-    <title>Michael Meierhoff - Softwareentwickler & Enterprise Architekt</title>
+    <meta name="description" content={site.description} />
+    <meta name="author" content={site.author} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:locale" content={site.locale} />
+    <meta property="og:title" content={site.title} />
+    <meta property="og:description" content={site.description} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:image:type" content="image/svg+xml" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url" content={canonicalUrl} />
+    <meta name="twitter:title" content={site.title} />
+    <meta name="twitter:description" content={site.description} />
+    <meta name="twitter:image" content={ogImageUrl} />
+    <title>{site.title}</title>
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </head>
+  <body class="flex min-h-screen items-center justify-center bg-gray-900">
+    <div class="text-center text-white">
+      <slot />
+    </div>
+  </body>
 </html>
-<body class="flex min-h-screen items-center justify-center bg-gray-900">
-  <div class="text-center text-white">
-    <slot />
-  </div>
-</body>

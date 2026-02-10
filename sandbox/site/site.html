@@ -1,0 +1,561 @@
+
+
+
+
+Du:
+Hochgeladenes Bild
+Hochgeladenes Bild
+Erste Bild ist meine aktuelle Website michaelmeierhoff.de Das zweite Bild ein potentielles Hero bild.
+
+Gemini's vorschlag wie die site neu aussehn kann
+
+Hier ist das vollständige Profil-Dokument für **michaelmeierhoff.de**, aufbereitet als **Markdown (MD)**.
+
+Es ist so strukturiert, dass du es direkt einem KI-Agenten (z. B. Cursor, Windsurf oder einem LLM) als "Content-Briefing" oder direkte Datenquelle für den Bau der Astro-Seite geben kannst.
+
+Ich habe die **persönlichere Note** (Vanlife, Musik, Fotografie) hier stärker gewichtet als auf der Business-Seite, genau wie in unserer Strategie besprochen.
+
+---
+
+`
+
+
+# Content-Briefing: michaelmeierhoff.de (Persönliche Visitenkarte)
+
+**Anweisung für den AI-Agenten:**
+Erstelle eine moderne, minimalistische "Link-in-Bio"-Style Webseite.
+**Tech-Stack:** Astro, Tailwind CSS.
+**Design-Vibe:** "Digitaler Nomade trifft Ingenieur". Clean, dunkel (Dark Mode), aber mit warmen Akzenten (z.B. Amber/Orange).
+**Ziel:** Der Nutzer soll schnell verstehen, wer Michael ist, und dann zur richtigen Business- oder Projektseite weitergeleitet werden.
+
+---
+
+## 1. Metadaten (Frontmatter)
+yaml
+title: "Michael Meierhoff - Architect, Maker, Traveler"
+description: "Persönliche Website von Michael Meierhoff. Enterprise Architect, Solopreneur und Vanlife-Enthusiast."
+author: "Michael Meierhoff"
+keywords: "Michael Meierhoff, Enterprise Architect, Vanlife, Remote Work, Solopreneur"
+`
+
+## 2. Hero Section (Der erste Eindruck)
+
+**Profilbild:**
+
+- _Platzhalter:_ Ein Bild von Michael, idealerweise in einer entspannten Umgebung (am/im Camper oder in der Natur), aber professionell gekleidet (Smart Casual).
+- _Alt-Text:_ Michael Meierhoff am mobilen Arbeitsplatz.
+
+**Headline:**
+
+> **Michael Meierhoff**
+
+**Sub-Headline:**
+
+> **Ingenieur. Architekt. Reisender.**
+
+**Intro-Text (Kurzbio):**
+
+> Ich verbinde komplexe Software-Architektur mit der Freiheit des mobilen Lebens. Nach über 35 Jahren in der IT – von der Flugzeugelektronik bei der Marine bis zur Enterprise Architecture in internationalen Konzernen – arbeite ich heute als **Solopreneur** an der Schnittstelle von **Technologie, System Thinking und KI**.
+> 
+> Mein Büro ist dort, wo ich parke. Mein Fokus liegt auf nachhaltigen Systemen und klaren Entscheidungen.
+
+---
+
+## 3. Die "Weiche" (Navigation zu den Hauptbereichen)
+
+_Hier soll der Nutzer entscheiden, welche Facette von Michael er sucht. Gestalte dies als markante Cards oder Buttons._
+
+### 🏢 **Business & Consulting**
+
+**Ziel-URL:** `https://meierhoff-systems.de` **Text:**
+
+> **Meierhoff Systems** Sie suchen einen erfahrenen **Senior Enterprise Architect** für IT-Modernisierung, Cloud-Migration oder Governance? Hier geht es zu meinem geschäftlichen Angebot.
+
+### 🧠 **Tech, Knowledge & AI**
+
+**Ziel-URL:** `https://nexonoma.de` **Text:**
+
+> **Nexonoma / MapLab** Mein "Labor" für **Knowledge Graphs**, KI-Agenten und visuelle Architektur. Hier experimentiere ich mit neuen Technologien (Neo4j, Astro, LLMs).
+
+### 🤝 **Netzwerk & CV**
+
+**Ziel-URL:** `https://linkedin.com/in/michaelmeierhoff` (Platzhalter) **Text:**
+
+> **LinkedIn Profil** Mein vollständiger Lebenslauf, berufliche Stationen und Vernetzung.
+
+---
+
+## 4. Über mich (Persönliche Einblicke)
+
+_Dieser Bereich unterscheidet diese Seite von der Business-Seite. Hier geht es um den Menschen._
+
+**Headline:**
+
+> **Hinter dem Code**
+
+**Text:**
+
+> Ich glaube daran, dass gute Architektur – egal ob in Software oder im Leben – auf **Resilienz und Einfachheit** beruht.
+> 
+> Wenn ich nicht gerade komplexe IT-Landschaften entwirre, baue ich an meiner eigenen Infrastruktur:
+> 
+> - 🚐 **Vanlife & Autarkie:** Ich lebe und arbeite zeitweise mobil. Mein Camper ist ein voll vernetztes, energieautarkes Smart Home auf Rädern (mit Home Assistant & ESP32).
+> - 🎸 **Musik:** Ich lerne Gitarre und beschäftige mich mit Rhythmus und Sound – ein perfekter Ausgleich zur digitalen Logik.
+> - 📷 **Fotografie:** Der Versuch, Momente festzuhalten, wenn die Landschaft an mir vorbeizieht.
+
+---
+
+## 5. Tech Stack (Was ich nutze)
+
+_Nur als Icons oder kurze Liste, um Kompetenz zu zeigen, ohne zu "verkaufen"._
+
+- **Languages:** Java, Python, TypeScript
+- **Architecture:** DDD, ARC42, AWS
+- **Tools:** Obsidian, Neo4j, Astro, Tailwind
+- **Mobile Office:** Starlink, Victron Energy, 5G-Routing
+
+---
+
+## 6. Footer
+
+**Text:**
+
+> © 2026 Michael Meierhoff. Built with Astro & Tailwind. [Impressum] | [Datenschutz] | [Kontakt: michael@meierhoff-systems.de]
+
+bau mir mal eine html. Die dient dann als grundlage dafür wie ich es dann tatsächlich haben möchte.
+
+ChatGPT:
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Michael Meierhoff | Architect, Maker, Traveler</title>
+    <meta
+      name="description"
+      content="Persönliche Website von Michael Meierhoff. Enterprise Architect, Solopreneur und Vanlife-Enthusiast."
+    />
+    <meta
+      name="keywords"
+      content="Michael Meierhoff, Enterprise Architect, Vanlife, Remote Work, Solopreneur"
+    />
+    <meta name="author" content="Michael Meierhoff" />
+
+    <meta property="og:title" content="Michael Meierhoff | Architect, Maker, Traveler" />
+    <meta
+      property="og:description"
+      content="Ingenieur. Architekt. Reisender. System Thinking, KI und Knowledge Graphs."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0b1220" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            boxShadow: {
+              soft: "0 10px 30px rgba(0,0,0,0.25)",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      html {
+        color-scheme: dark;
+      }
+      .bg-grid {
+        background-image:
+          radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.06) 1px, transparent 0);
+        background-size: 26px 26px;
+      }
+      .glass {
+        background: rgba(15, 23, 42, 0.55);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(148, 163, 184, 0.12);
+      }
+      .ring-warm {
+        box-shadow:
+          0 0 0 1px rgba(251, 191, 36, 0.22),
+          0 20px 60px rgba(251, 191, 36, 0.08);
+      }
+    </style>
+  </head>
+
+  <body class="min-h-screen bg-slate-950 text-slate-100">
+    <!-- Background -->
+    <div class="pointer-events-none fixed inset-0 -z-10">
+      <div class="absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-950 to-slate-900"></div>
+      <div class="absolute inset-0 bg-grid opacity-40"></div>
+      <div
+        class="absolute -top-48 left-1/2 h-[520px] w-[520px] -translate-x-1/2 rounded-full blur-3xl"
+        style="background: radial-gradient(circle, rgba(59,130,246,0.18), rgba(15,23,42,0) 65%)"
+      ></div>
+      <div
+        class="absolute top-72 right-[-120px] h-[520px] w-[520px] rounded-full blur-3xl"
+        style="background: radial-gradient(circle, rgba(251,191,36,0.16), rgba(15,23,42,0) 65%)"
+      ></div>
+    </div>
+
+    <!-- Top bar -->
+    <header class="mx-auto max-w-6xl px-6 pt-6">
+      <nav class="glass flex items-center justify-between rounded-2xl px-4 py-3 shadow-soft">
+        <a href="#" class="flex items-center gap-3">
+          <span
+            class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-slate-900 ring-1 ring-slate-800"
+          >
+            <span class="text-sm font-semibold text-amber-200">MM</span>
+          </span>
+          <span class="text-sm font-semibold tracking-wide text-slate-100">michaelmeierhoff.de</span>
+        </a>
+
+        <div class="hidden items-center gap-2 sm:flex">
+          <a
+            href="#links"
+            class="rounded-xl px-3 py-2 text-sm text-slate-200 hover:bg-slate-900/70 hover:text-slate-50"
+            >Links</a
+          >
+          <a
+            href="#about"
+            class="rounded-xl px-3 py-2 text-sm text-slate-200 hover:bg-slate-900/70 hover:text-slate-50"
+            >Über mich</a
+          >
+          <a
+            href="#stack"
+            class="rounded-xl px-3 py-2 text-sm text-slate-200 hover:bg-slate-900/70 hover:text-slate-50"
+            >Stack</a
+          >
+          <a
+            href="#kontakt"
+            class="rounded-xl bg-amber-400/10 px-3 py-2 text-sm font-semibold text-amber-200 ring-1 ring-amber-300/20 hover:bg-amber-400/15"
+            >Kontakt</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main class="mx-auto max-w-6xl px-6 pb-14">
+      <!-- Hero -->
+      <section class="pt-10 sm:pt-14">
+        <div class="glass relative overflow-hidden rounded-3xl p-6 shadow-soft sm:p-10">
+          <div class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+            <div>
+              <p class="inline-flex items-center gap-2 rounded-full bg-amber-400/10 px-3 py-1 text-xs font-semibold text-amber-200 ring-1 ring-amber-300/15">
+                <span class="h-2 w-2 rounded-full bg-amber-300"></span>
+                Digitaler Nomade trifft Ingenieur
+              </p>
+
+              <h1 class="mt-5 text-3xl font-semibold leading-tight tracking-tight sm:text-5xl">
+                Michael Meierhoff
+              </h1>
+
+              <p class="mt-3 text-lg text-slate-200 sm:text-xl">
+                Ingenieur. Architekt. Reisender.
+              </p>
+
+              <p class="mt-5 max-w-2xl text-sm leading-relaxed text-slate-300 sm:text-base">
+                Ich verbinde komplexe Software-Architektur mit der Freiheit des mobilen Lebens.
+                Nach über 35 Jahren in der IT, von der Flugzeugelektronik bei der Marine bis zur
+                Enterprise Architecture in internationalen Konzernen, arbeite ich heute als
+                Solopreneur an der Schnittstelle von Technologie, System Thinking und KI.
+              </p>
+
+              <p class="mt-3 max-w-2xl text-sm leading-relaxed text-slate-300 sm:text-base">
+                Mein Büro ist dort, wo ich parke. Mein Fokus liegt auf nachhaltigen Systemen und klaren Entscheidungen.
+              </p>
+
+              <div class="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
+                <a
+                  href="#links"
+                  class="inline-flex items-center justify-center rounded-2xl bg-amber-400 px-5 py-3 text-sm font-semibold text-slate-950 shadow-soft hover:bg-amber-300"
+                >
+                  Zu den Links
+                </a>
+                <a
+                  href="https://meierhoff-systems.de"
+                  class="inline-flex items-center justify-center rounded-2xl bg-slate-900/60 px-5 py-3 text-sm font-semibold text-slate-100 ring-1 ring-slate-800 hover:bg-slate-900"
+                >
+                  Business & Consulting
+                </a>
+              </div>
+
+              <div class="mt-8 flex flex-wrap gap-3 text-xs text-slate-300">
+                <span class="rounded-full bg-slate-900/60 px-3 py-1 ring-1 ring-slate-800"
+                  >Remote Work</span
+                >
+                <span class="rounded-full bg-slate-900/60 px-3 py-1 ring-1 ring-slate-800"
+                  >Enterprise Architecture</span
+                >
+                <span class="rounded-full bg-slate-900/60 px-3 py-1 ring-1 ring-slate-800"
+                  >Knowledge Graphs</span
+                >
+                <span class="rounded-full bg-slate-900/60 px-3 py-1 ring-1 ring-slate-800"
+                  >KI Agenten</span
+                >
+              </div>
+            </div>
+
+            <!-- Image -->
+            <div class="relative">
+              <div class="absolute -inset-3 -z-10 rounded-3xl ring-warm"></div>
+              <figure class="overflow-hidden rounded-3xl bg-slate-900/60 ring-1 ring-slate-800">
+                <!-- Replace src with your hero image -->
+                <img
+                  src="hero.jpg"
+                  alt="Michael Meierhoff am mobilen Arbeitsplatz."
+                  class="h-[320px] w-full object-cover sm:h-[420px]"
+                />
+                <figcaption class="px-4 py-3 text-xs text-slate-300">
+                  Optional: Hero-Foto im Camper Workspace, smart casual, warmes Licht, tech vibe.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cards / Links -->
+      <section id="links" class="pt-10 sm:pt-12">
+        <div class="flex items-end justify-between gap-4">
+          <h2 class="text-xl font-semibold tracking-tight sm:text-2xl">Die Weiche</h2>
+          <p class="hidden text-sm text-slate-300 sm:block">Wähle die Facette, die dich interessiert.</p>
+        </div>
+
+        <div class="mt-6 grid gap-4 lg:grid-cols-3">
+          <!-- Business -->
+          <a
+            href="https://meierhoff-systems.de"
+            class="glass group rounded-3xl p-6 shadow-soft transition hover:bg-slate-900/60"
+          >
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <div class="text-sm font-semibold text-slate-100">Business & Consulting</div>
+                <div class="mt-1 text-xs text-slate-300">meierhoff-systems.de</div>
+              </div>
+              <span class="rounded-2xl bg-amber-400/10 px-3 py-1 text-xs font-semibold text-amber-200 ring-1 ring-amber-300/15">
+                Consulting
+              </span>
+            </div>
+            <p class="mt-4 text-sm leading-relaxed text-slate-300">
+              Du suchst einen erfahrenen Senior Enterprise Architect für IT-Modernisierung, Cloud-Migration oder Governance?
+              Hier geht es zu meinem geschäftlichen Angebot.
+            </p>
+            <div class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-amber-200">
+              Öffnen
+              <span class="transition group-hover:translate-x-0.5">→</span>
+            </div>
+          </a>
+
+          <!-- Tech -->
+          <a
+            href="https://nexonoma.de"
+            class="glass group rounded-3xl p-6 shadow-soft transition hover:bg-slate-900/60"
+          >
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <div class="text-sm font-semibold text-slate-100">Tech, Knowledge & AI</div>
+                <div class="mt-1 text-xs text-slate-300">nexonoma.de</div>
+              </div>
+              <span class="rounded-2xl bg-blue-400/10 px-3 py-1 text-xs font-semibold text-blue-200 ring-1 ring-blue-300/15">
+                Lab
+              </span>
+            </div>
+            <p class="mt-4 text-sm leading-relaxed text-slate-300">
+              Nexonoma und MapLab sind mein Labor für Knowledge Graphs, KI-Agenten und visuelle Architektur.
+              Hier experimentiere ich mit Neo4j, Astro und LLMs.
+            </p>
+            <div class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-amber-200">
+              Öffnen
+              <span class="transition group-hover:translate-x-0.5">→</span>
+            </div>
+          </a>
+
+          <!-- Network -->
+          <a
+            href="https://linkedin.com/in/michaelmeierhoff"
+            class="glass group rounded-3xl p-6 shadow-soft transition hover:bg-slate-900/60"
+          >
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <div class="text-sm font-semibold text-slate-100">Netzwerk & CV</div>
+                <div class="mt-1 text-xs text-slate-300">LinkedIn</div>
+              </div>
+              <span class="rounded-2xl bg-slate-200/10 px-3 py-1 text-xs font-semibold text-slate-200 ring-1 ring-slate-300/15">
+                CV
+              </span>
+            </div>
+            <p class="mt-4 text-sm leading-relaxed text-slate-300">
+              Mein vollständiger Lebenslauf, berufliche Stationen und Vernetzung.
+            </p>
+            <div class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-amber-200">
+              Öffnen
+              <span class="transition group-hover:translate-x-0.5">→</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="pt-10 sm:pt-12">
+        <div class="glass rounded-3xl p-6 shadow-soft sm:p-10">
+          <h2 class="text-xl font-semibold tracking-tight sm:text-2xl">Hinter dem Code</h2>
+
+          <p class="mt-4 max-w-3xl text-sm leading-relaxed text-slate-300 sm:text-base">
+            Ich glaube daran, dass gute Architektur, egal ob in Software oder im Leben, auf Resilienz und Einfachheit beruht.
+            Wenn ich nicht gerade komplexe IT-Landschaften entwirre, baue ich an meiner eigenen Infrastruktur.
+          </p>
+
+          <div class="mt-7 grid gap-4 lg:grid-cols-3">
+            <div class="rounded-2xl bg-slate-900/50 p-5 ring-1 ring-slate-800">
+              <div class="text-sm font-semibold text-slate-100">🚐 Vanlife & Autarkie</div>
+              <p class="mt-2 text-sm leading-relaxed text-slate-300">
+                Ich lebe und arbeite zeitweise mobil. Mein Camper ist ein voll vernetztes, energieautarkes Smart Home auf Rädern,
+                mit Home Assistant und ESP32.
+              </p>
+            </div>
+
+            <div class="rounded-2xl bg-slate-900/50 p-5 ring-1 ring-slate-800">
+              <div class="text-sm font-semibold text-slate-100">🎸 Musik</div>
+              <p class="mt-2 text-sm leading-relaxed text-slate-300">
+                Ich lerne Gitarre und beschäftige mich mit Rhythmus und Sound.
+                Ein sehr guter Ausgleich zur digitalen Logik.
+              </p>
+            </div>
+
+            <div class="rounded-2xl bg-slate-900/50 p-5 ring-1 ring-slate-800">
+              <div class="text-sm font-semibold text-slate-100">📷 Fotografie</div>
+              <p class="mt-2 text-sm leading-relaxed text-slate-300">
+                Der Versuch, Momente festzuhalten, wenn die Landschaft an mir vorbeizieht.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stack -->
+      <section id="stack" class="pt-10 sm:pt-12">
+        <div class="grid gap-4 lg:grid-cols-2">
+          <div class="glass rounded-3xl p-6 shadow-soft sm:p-10">
+            <h2 class="text-xl font-semibold tracking-tight sm:text-2xl">Tech Stack</h2>
+            <p class="mt-3 text-sm leading-relaxed text-slate-300">
+              Kurz, kompetenzorientiert, ohne Sales Ton.
+            </p>
+
+            <div class="mt-6 space-y-4">
+              <div>
+                <div class="text-xs font-semibold uppercase tracking-wide text-slate-400">Languages</div>
+                <div class="mt-2 flex flex-wrap gap-2">
+                  <span class="rounded-full bg-slate-900/60 px-3 py-1 text-sm ring-1 ring-slate-800">Java</span>
+                  <span class="rounded-full bg-slate-900/60 px-3 py-1 text-sm ring-1 ring-slate-800">Python</span>
+                  <span class="rounded-full bg-slate-900/60 px-3 py-1 text-sm ring-1 ring-slate-800">TypeScript</span>
+                </div>
+              </div>
+
+              <div>
+                <div class="text-xs font-semibold uppercase tracking-wide text-slate-400">Architecture</div>
+                <div class="mt-2 flex flex-wrap gap-2">
+                  <span class="rounded-full bg-slate-900/60 px-3 py-1 text-sm ring-1 ring-slate-800">DDD</span>
+                  <span class="rounded-full bg-slate-900/60 px-3 py-1 text-sm ring-1 ring-slate-800">ARC42</span>
+                  <span class="rounded-full bg-slate-900/60 px-3 py-1 text-sm ring-1 ring-slate-800">AWS</span>
+                </div>
+              </div>
+
+              <div>
+                <div class="text-xs font-semibold uppercase tracking-wide text-slate-400">Tools</div>
+                <div class="mt-2 flex flex-wrap gap-2">
+                  <span class="rounded-full bg-slate-900/60 px-3 py-1 text-sm ring-1 ring-slate-800">Obsidian</span>
+                  <span class="rounded-full bg-slate-900/60 px-3 py-1 text-sm ring-1 ring-slate-800">Neo4j</span>
+                  <span class="rounded-full bg-slate-900/60 px-3 py-1 text-sm ring-1 ring-slate-800">Astro</span>
+                  <span class="rounded-full bg-slate-900/60 px-3 py-1 text-sm ring-1 ring-slate-800">Tailwind</span>
+                </div>
+              </div>
+
+              <div>
+                <div class="text-xs font-semibold uppercase tracking-wide text-slate-400">Mobile Office</div>
+                <div class="mt-2 flex flex-wrap gap-2">
+                  <span class="rounded-full bg-slate-900/60 px-3 py-1 text-sm ring-1 ring-slate-800">Starlink</span>
+                  <span class="rounded-full bg-slate-900/60 px-3 py-1 text-sm ring-1 ring-slate-800">Victron Energy</span>
+                  <span class="rounded-full bg-slate-900/60 px-3 py-1 text-sm ring-1 ring-slate-800">5G Routing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact -->
+          <div id="kontakt" class="glass rounded-3xl p-6 shadow-soft sm:p-10">
+            <h2 class="text-xl font-semibold tracking-tight sm:text-2xl">Kontakt</h2>
+            <p class="mt-3 text-sm leading-relaxed text-slate-300">
+              Der schnellste Weg ist E-Mail oder LinkedIn.
+            </p>
+
+            <div class="mt-6 space-y-3">
+              <a
+                class="flex items-center justify-between rounded-2xl bg-slate-900/50 px-4 py-4 ring-1 ring-slate-800 hover:bg-slate-900"
+                href="mailto:michael@meierhoff-systems.de"
+              >
+                <div>
+                  <div class="text-sm font-semibold text-slate-100">E-Mail</div>
+                  <div class="mt-1 text-sm text-slate-300">michael@meierhoff-systems.de</div>
+                </div>
+                <span class="text-amber-200">→</span>
+              </a>
+
+              <a
+                class="flex items-center justify-between rounded-2xl bg-slate-900/50 px-4 py-4 ring-1 ring-slate-800 hover:bg-slate-900"
+                href="https://linkedin.com/in/michaelmeierhoff"
+              >
+                <div>
+                  <div class="text-sm font-semibold text-slate-100">LinkedIn</div>
+                  <div class="mt-1 text-sm text-slate-300">Profil öffnen</div>
+                </div>
+                <span class="text-amber-200">→</span>
+              </a>
+
+              <div class="rounded-2xl bg-amber-400/10 p-4 ring-1 ring-amber-300/15">
+                <div class="text-sm font-semibold text-amber-200">Hinweis</div>
+                <p class="mt-1 text-sm text-slate-200">
+                  Für die Business-Perspektive nutze bitte die Consulting-Seite.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="pt-10 sm:pt-12">
+        <div class="glass rounded-3xl px-6 py-6 text-sm text-slate-300 shadow-soft sm:px-10">
+          <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <div>© 2026 Michael Meierhoff. Built with Astro & Tailwind.</div>
+            <div class="flex flex-wrap gap-3">
+              <a href="/impressum" class="hover:text-slate-100">Impressum</a>
+              <a href="/datenschutz" class="hover:text-slate-100">Datenschutz</a>
+              <a href="mailto:michael@meierhoff-systems.de" class="hover:text-slate-100">Kontakt</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Optional: simple smooth scroll -->
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((a) => {
+        a.addEventListener("click", (e) => {
+          const id = a.getAttribute("href");
+          if (!id || id === "#") return;
+          const el = document.querySelector(id);
+          if (!el) return;
+          e.preventDefault();
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      });
+    </script>
+  </body>
+</html>
+
+
+
