@@ -15,7 +15,7 @@ Die Seite dient als digitale Visitenkarte mit Profil, Kurzvorstellung und direkt
 - Tailwind CSS 4
 - daisyUI 5
 - pnpm
-- Node.js 25 (`.nvmrc`, `engines`)
+- Node.js 22 (`.nvmrc`, `engines`)
 
 ## Projektstruktur
 
