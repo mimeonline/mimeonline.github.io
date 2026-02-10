@@ -53,3 +53,12 @@ Alle Befehle im Projekt-Root ausfuehren:
 
 Das Deployment erfolgt ueber GitHub Actions bei Push auf `main` nach GitHub Pages.  
 Workflow-Datei: `.github/workflows/deploy.yml`
+
+## SEO Betrieb
+
+- `canonical` wird pro Route dynamisch gesetzt.
+- Twitter Card nutzt `summary_large_image`.
+- Sitemap wird unter `https://michaelmeierhoff.de/sitemap-index.xml` bereitgestellt.
+- Optional fuer Search Console / Bing Webmaster Tools:
+  - `PUBLIC_GOOGLE_SITE_VERIFICATION=<token>`
+  - `PUBLIC_BING_SITE_VERIFICATION=<token>`
