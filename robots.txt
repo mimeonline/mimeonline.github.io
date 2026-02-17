@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://michaelmeierhoff.de/sitemap.xml
+Sitemap: https://mimeonline.github.io/sitemap.xml
