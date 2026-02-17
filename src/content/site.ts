@@ -1,5 +1,5 @@
 export const site = {
-  url: 'https://michaelmeierhoff.de',
+  url: 'https://mimeonline.github.io',
   title: 'Michael Meierhoff - Softwareentwickler & Enterprise Architekt',
   description:
     'Michael Meierhoff: Softwareentwickler und Enterprise Architekt fuer moderne IT-Architekturen, skalierbare Systeme und klare technische Entscheidungen.',
